@@ -1,0 +1,75 @@
+a <- c("A", "B", "C")
+remove(a)
+
+a <- c("Z")
+
+a <- c("Ass", "Titties", "Pussies")
+remove(a)
+
+l <- list("John", 72, TRUE)
+
+l[1]
+l[2]
+l[3]
+
+names(l) <- c("Name", "Age", "Retired")
+
+print(l)
+l$Retired
+l$Age
+l$Name
+
+length(l)
+dim(l)
+
+l$Name <- "James"
+
+l[length(l)+1] <- "Boston"
+
+names(l)[4] <- "Residence"
+
+l$Birthplace <- "Chapel Hill"
+
+l1 <- list(1,2,3)
+l2 <- list("a","b","c")
+newl <- c(l1, l2)
+print(newl)
+
+
+x <- matrix(1:12, nrow=4, ncol=4)
+print(x)
+x <- matrix("Hello", nrow=4, ncol=4)
+print(x)
+
+myrows <- c("a","b","c","d")
+mycols <- c("Col1","Col2","Col3","Col4")
+
+x <- matrix(1:16, nrow=4, ncol=4, dimnames=list(myrows, mycols))
+print(x)
+
+colnames(x)
+
+rownames(x)
+rownames(x)[4] <- "ZZ"
+print(x)
+
+
+x[3]
+x[2,3]
+x[2, "Col3"]
+x[,2]
+x[1:3]
+t(x)
+
+cbind(x, "Col5"=c(11,22,33,44))
+
+dim(x)
+
+a <-c(1,2,3,4)
+b <- c(11,22,33,44)
+
+m1 <- rbind(a,b)
+print(m1)
+
+m2 <- cbind(a,b)
+print(m2)
